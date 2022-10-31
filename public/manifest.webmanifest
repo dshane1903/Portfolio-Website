@@ -1,0 +1,388 @@
+{
+  "theme_color": "#cbd5e0",
+  "background_color": "#171923",
+  "lang": "en",
+  "dir": "ltr",
+  "display": "standalone",
+  "scope": "/",
+  "name": "Shane Duncan Portfolio",
+  "app_name": "Shane Duncan Portfolio",
+  "description": "Personal space on the internet to share my work, my thoughts, a bit about myself and my working process, along with get in touch information.",
+  "start_url": "/",
+  "short_name": "SD",
+  "icons": [
+    {
+      "src": "images/androidchrome72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "images/windows10/windows124.png",
+      "sizes": "284x284"
+    },
+    {
+      "src": "images/windows10/windows123.png",
+      "sizes": "142x142"
+    },
+    {
+      "src": "images/windows10/windows120.png",
+      "sizes": "71x71"
+    },
+    {
+      "src": "images/windows10/windows122.png",
+      "sizes": "107x107"
+    },
+    {
+      "src": "images/windows10/windows121.png",
+      "sizes": "89x89"
+    },
+    {
+      "src": "images/windows10/windows129.png",
+      "sizes": "600x600"
+    },
+    {
+      "src": "images/windows10/windows128.png",
+      "sizes": "300x300"
+    },
+    {
+      "src": "images/windows10/windows125.png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "images/windows10/windows127.png",
+      "sizes": "225x225"
+    },
+    {
+      "src": "images/windows10/windows126.png",
+      "sizes": "188x188"
+    },
+    {
+      "src": "images/windows10/windows145.png",
+      "sizes": "1240x600"
+    },
+    {
+      "src": "images/windows10/windows144.png",
+      "sizes": "620x300"
+    },
+    {
+      "src": "images/windows10/windows141.png",
+      "sizes": "310x150"
+    },
+    {
+      "src": "images/windows10/windows143.png",
+      "sizes": "465x225"
+    },
+    {
+      "src": "images/windows10/windows142.png",
+      "sizes": "388x188"
+    },
+    {
+      "src": "images/windows10/windows134.png",
+      "sizes": "1240x1240"
+    },
+    {
+      "src": "images/windows10/windows133.png",
+      "sizes": "620x620"
+    },
+    {
+      "src": "images/windows10/windows130.png",
+      "sizes": "310x310"
+    },
+    {
+      "src": "images/windows10/windows132.png",
+      "sizes": "465x465"
+    },
+    {
+      "src": "images/windows10/windows131.png",
+      "sizes": "388x388"
+    },
+    {
+      "src": "images/windows10/windows109.png",
+      "sizes": "176x176"
+    },
+    {
+      "src": "images/windows10/windows108.png",
+      "sizes": "88x88"
+    },
+    {
+      "src": "images/windows10/windows105.png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "images/windows10/windows107.png",
+      "sizes": "66x66"
+    },
+    {
+      "src": "images/windows10/windows106.png",
+      "sizes": "55x55"
+    },
+    {
+      "src": "images/windows10/windows119.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/windows10/windows117.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/windows10/windows115.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/windows10/windows113.png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "images/windows10/windows111.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "images/windows10/windows118.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/windows10/windows116.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/windows10/windows114.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/windows10/windows112.png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "images/windows10/windows110.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "images/windows10/windows140.png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "images/windows10/windows139.png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "images/windows10/windows138.png",
+      "sizes": "75x75"
+    },
+    {
+      "src": "images/windows10/windows137.png",
+      "sizes": "63x63"
+    },
+    {
+      "src": "images/windows10/windows136.png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "images/windows10/windows135.png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "images/windows10/windows104.png",
+      "sizes": "2480x1200"
+    },
+    {
+      "src": "images/windows10/windows103.png",
+      "sizes": "1240x600"
+    },
+    {
+      "src": "images/windows10/windows102.png",
+      "sizes": "930x450"
+    },
+    {
+      "src": "images/windows10/windows101.png",
+      "sizes": "775x375"
+    },
+    {
+      "src": "images/windows10/windows100.png",
+      "sizes": "620x300"
+    },
+    {
+      "src": "images/windows/windows1.png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "images/windows/windows2.png",
+      "sizes": "30x30"
+    },
+    {
+      "src": "images/windows/windows3.png",
+      "sizes": "42x42"
+    },
+    {
+      "src": "images/windows/windows4.png",
+      "sizes": "54x54"
+    },
+    {
+      "src": "images/windows/windows7.png",
+      "sizes": "1116x540"
+    },
+    {
+      "src": "images/windows/windows6.png",
+      "sizes": "868x420"
+    },
+    {
+      "src": "images/windows/windows5.png",
+      "sizes": "620x300"
+    },
+    {
+      "src": "images/windows/windows11.png",
+      "sizes": "270x270"
+    },
+    {
+      "src": "images/windows/windows10.png",
+      "sizes": "210x210"
+    },
+    {
+      "src": "images/windows/windows9.png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "images/windows/windows8.png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "images/windows/windows14.png",
+      "sizes": "90x90"
+    },
+    {
+      "src": "images/windows/windows13.png",
+      "sizes": "70x70"
+    },
+    {
+      "src": "images/windows/windows12.png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "images/windows/windows17.png",
+      "sizes": "106x106"
+    },
+    {
+      "src": "images/windows/windows16.png",
+      "sizes": "62x62"
+    },
+    {
+      "src": "images/windows/windows15.png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "images/windows/windows20.png",
+      "sizes": "360x360"
+    },
+    {
+      "src": "images/windows/windows19.png",
+      "sizes": "210x210"
+    },
+    {
+      "src": "images/windows/windows18.png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "images/windows/windows23.png",
+      "sizes": "170x170"
+    },
+    {
+      "src": "images/windows/windows22.png",
+      "sizes": "99x99"
+    },
+    {
+      "src": "images/windows/windows21.png",
+      "sizes": "71x71"
+    },
+    {
+      "src": "images/windows/windows26.png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "images/windows/windows25.png",
+      "sizes": "70x70"
+    },
+    {
+      "src": "images/windows/windows24.png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "images/msteams/nmsteamslaunchericon192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/msteams/nmsteamslaunchericon32.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/android/launchericon512.pn.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/android/launchericon192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/android/launchericon144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/android/launchericon96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/android/launchericon72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "images/android/launchericon48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/chrome/chromelaunchericon48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/chrome/chromelaunchericon16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "images/chrome/chromelaunchericon128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "images/firefox/firefoxlaunchericon512marketplace.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/firefox/firefoxlaunchericon128marketplace.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "images/firefox/firefoxlaunchericon256.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/firefox/firefoxlaunchericon128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "images/firefox/firefoxlaunchericon90.png",
+      "sizes": "90x90"
+    },
+    {
+      "src": "images/firefox/firefoxlaunchericon64.png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/firefox/firefoxlaunchericon48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/firefox/firefoxlaunchericon32.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/firefox/firefoxlaunchericon16.png",
+      "sizes": "16x16"
+    }
+  ]
+}

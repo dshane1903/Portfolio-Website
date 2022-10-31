@@ -1,0 +1,186 @@
+---
+title: "Life Is Hope, a nonprofit organizational infrastructure"
+publishedAt: '2021-08-09'
+excerpt: 'Learn about the process that made Life Is Hope come to life.'
+media: ''
+author: 'Shane Duncan'
+tags: ['study-case']
+---
+
+<LiveLinks
+  liveDemoURL="https://life-is-hope.vercel.app/"
+  sourceCodeURL="https://github.com/dshane1903/life-is-hope"
+/>
+
+Learn how the Life Is Hope nonprofit page came to life. Learn about the process and insights from the development phase.
+
+<ProjectOverview 
+  timeline="3 weeks"
+  services={["Website Development", "UI/UX Design", "Strategy"]}
+  stack={["Gatsby JS", "Emotion/Chakra-UI", "Typescript", "Contentful"]}
+  role="Lead developer and Project Manager"
+/>
+
+## Overview
+
+Life Is Hope is a small nonprofit that does everything in-house and gained support via word of mouth. My goal was to create a website that allows Life Is Hope to have a presence online to spread their mission statement and collect donations.
+
+## The problem
+
+Education is a very important stepping stone to guide refugee children towards a higher standard of living. Life Is Hope ion refugee students on an international skill, in which it cooperates with local organizations to build sustainable solutions to educational infrastrucure and providing basic school supplies to create opportunies for refugee populations.
+
+## The solution
+
+Life Is Hope wants to bring education to refugee students, especially in areas that don't have an established school system. This website will help them raise awareness on the importance of nurturing the young minds of our next generation, no matter who that might be.
+
+Key features that were necessary to maximize user utility:
+- Donation Portal
+- Admin Functionality
+- Contact Us
+- User Flow
+
+
+### Key findings
+
+- End-User Goals: This website has been designed to blend information with captivating photos to capture the essence of Life Is Hope's work. Along with the content, this website is effortless for a visitor to browse information and make a contribution.
+- Technology: The website uses React with NextJS to serve content to users quickly and easily. Data such as subscribers and blogs are stored with a mongo database. Uploaded media such as images are stored with Cloudinary. In order to accept online donations, our website has integration with Stripe.
+- Design: This website has been designed with unique visual product element to display Life Is Hope's features. Design the aesthetics feasible for software implementation, such as layout menus or drop-down options, ensuring all interactions are intuitive and clear.
+
+### Conceptualization
+
+Based on the key findings, I made a clear game plan and strategy that will cover each point of concern most cusomers would have. The process has been split into 4 phases:
+
+1. Idea
+2. Develop
+3. Scale
+4. Transform
+
+<Image
+  alt="Phases"
+  src="/images/blog/lifeishope/beliefs.png"
+  width={1360}
+  height={760}
+/>
+
+
+
+<Image
+  alt="Services"
+  src="/images/blog/lifeishope/services.png"
+  width={1360}
+  height={760}
+/>
+
+## Key features
+
+Life Is Hope business page had to have the following key features:
+
+### A donor can quickly enter in all the necessary information to complete a donation to Life Is Hope.
+
+<Image
+  alt="Process"
+  src="/images/blog/lifeishope/phases.png"
+  width={1360}
+  height={760}
+/>
+
+### The client has a straightforward dashboard to manage their blogs and subscribers, and track donations
+
+<Image
+  alt="Beliefs"
+  src="/images/blog/lifeishope/services.png"
+  width={1360}
+  height={760}
+/>
+
+### A visitor can contact Life Is Hope directly by providing their name, email and inquiry.
+
+
+<Image
+  alt="Contact"
+  src="/images/blog/lifeishope/contact.png"
+  width={1360}
+  height={760}
+/>
+
+## Core technologies
+
+In building the Life Is Hope website, I used a specific set of tools:
+
+### Gatsby JS
+
+Gatsby was choosen as a front-end framework for their capability of building dynamic websites that are statically served over a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network), thus offering a blazzing fast surfing experience. Another big point in choosing `gatsbyjs` was their [plugin library](https://www.gatsbyjs.com/plugins/), which makes the developer job that much easier.
+
+```js[class="line-numbers"]:gatsby-config.js
+module.exports = {
+  plugins: [
+    'gatsby-plugin-emotion',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: process.env.GOOGLE_ANALITICS_TRACKING_ID,
+      },
+    },
+    '@chakra-ui/gatsby-plugin',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-offline',
+  ]
+}
+```
+### Chakra-UI
+
+For styling the choice was a CSS-in-JS solution based on `emotion` and `chakra-ui`, which is a modular component library that makes building websites simple and easy. Integrating such solutions into **gatsby** is very simple and done thorugh their plugins as shown above.
+
+The combination between chakra and emotion allows you to quickly make highly customizable and accesible components.
+
+```ts[class="line-numbers"]:button.styles.ts
+import { Button } from '@chakra-ui/react';
+
+export const ButtonWrapper = styled(Button)`
+  background: transparent;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2.15rem 2rem;
+  border-radius: 10px;
+  width: fit-content;
+  ${(props) => props.margin && `margin: ${props.margin}`};
+  transition-property: transform, box-shadow;
+  transition-duration: ${theme.transitions.speed.xl};
+  transition-timing-function: ${theme.transitions.curve.scaleUp};
+  :hover {
+    background: transparent;
+    transform: scale(1.035);
+  }
+`;
+```
+### Contentful
+
+For managing the content we chose to go with `contentful`, which is a very simple and easy to use [Headless CMS](https://www.contentful.com/r/knowledgebase/what-is-headless-cms/), which integrates great with **gatsby** with just a plugin.
+
+Using contentful to create data models is a breeze and querying the data is made easy thorugh their `graphql` API right into our gatsby site
+
+```tsx[class="line-numbers"]:index.tsx
+export const query = graphql`
+  query HomePage {
+    hero: allContentfulLayoutHero {
+      edges {
+        node {
+          sectionModel {
+            id
+            caption
+            subTitle
+            ctaLink
+            invertSection
+          }
+        }
+      }
+    }
+  }
+`
+```
+
+## Conclusion
+
+The aim of the project was to connect clients with Life Is Hope, and provide an easy understanding of it's core principles and the process that clients need to expect when working togheter. Establishing a strong game plan, and in collaboration with [Enyel](https://www.enyelsequeira.com/) developing a business page that will showcase all the things that were identified during the research phase. 
